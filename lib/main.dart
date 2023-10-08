@@ -2,12 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:qr_generator/consts/colors.dart';
 import 'package:qr_generator/view/splash%20view/splash_view.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
-void main() async {
-  SharedPreferences prefs = await SharedPreferences.getInstance();
-  prefs.setBool("userToken", false);
-
+void main() {
   runApp(const MyApp());
 }
 
